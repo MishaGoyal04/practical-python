@@ -193,6 +193,7 @@ Try a few lookups:
 'DOA'
 >>>
 ```
+VERIFIED
 
 Try reassigning one value:
 
@@ -202,6 +203,7 @@ Try reassigning one value:
 ['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'DOA', 'GOOG']
 >>>
 ```
+VERIFIED
 
 Take a few slices:
 
@@ -212,6 +214,7 @@ Take a few slices:
 ['DOA', 'GOOG']
 >>>
 ```
+VERIFIED
 
 Create an empty list and append an item to it.
 
@@ -221,6 +224,7 @@ Create an empty list and append an item to it.
 >>> mysyms
 ['GOOG']
 ```
+VERIFIED
 
 You can reassign a portion of a list to another list. For example:
 
@@ -230,6 +234,7 @@ You can reassign a portion of a list to another list. For example:
 ['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG']
 >>>
 ```
+VERIFIED
 
 When you do this, the list on the left-hand-side (`symlist`) will be resized as appropriate to make the right-hand-side (`mysyms`) fit.
 For instance, in the above example, the last two items of `symlist` got replaced by the single item in the list `mysyms`.
@@ -243,6 +248,13 @@ Check this out by typing the following loop and watching what happens:
 >>> for s in symlist:
         print('s =', s)
 # Look at the output
+s = HPQ
+s = AAPL
+s = AIG
+s = MSFT
+s = YHOO
+s = DOA
+s = GOOG
 ```
 
 ### Exercise 1.21: Membership tests
@@ -258,6 +270,7 @@ False
 True
 >>>
 ```
+VERIFIED
 
 ### Exercise 1.22: Appending, inserting, and deleting items
 
@@ -269,6 +282,7 @@ Use the `append()` method to add the symbol `'RHT'` to end of `symlist`.
 ['HPQ', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
 >>>
 ```
+VERIFIED
 
 Use the `insert()` method to insert the symbol `'AA'` as the second item in the list.
 
@@ -278,6 +292,7 @@ Use the `insert()` method to insert the symbol `'AA'` as the second item in the 
 ['HPQ', 'AA', 'AAPL', 'AIG', 'MSFT', 'YHOO', 'GOOG', 'RHT']
 >>>
 ```
+VERIFIED
 
 Use the `remove()` method to remove `'MSFT'` from the list.
 
@@ -287,6 +302,7 @@ Use the `remove()` method to remove `'MSFT'` from the list.
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT']
 >>>
 ```
+VERIFIED
 
 Append a duplicate entry for `'YHOO'` at the end of the list.
 
@@ -298,6 +314,7 @@ Append a duplicate entry for `'YHOO'` at the end of the list.
 ['HPQ', 'AA', 'AAPL', 'AIG', 'YHOO', 'GOOG', 'RHT', 'YHOO']
 >>>
 ```
+VERIFIED
 
 Use the `index()` method to find the first position of `'YHOO'` in the list.
 
@@ -308,6 +325,7 @@ Use the `index()` method to find the first position of `'YHOO'` in the list.
 'YHOO'
 >>>
 ```
+VERIFIED
 
 Count how many times `'YHOO'` is in the list:
 
@@ -316,6 +334,7 @@ Count how many times `'YHOO'` is in the list:
 2
 >>>
 ```
+VERIFIED
 
 Remove the first occurrence of `'YHOO'`.
 
@@ -325,6 +344,7 @@ Remove the first occurrence of `'YHOO'`.
 ['HPQ', 'AA', 'AAPL', 'AIG', 'GOOG', 'RHT', 'YHOO']
 >>>
 ```
+VERIFIED
 
 Just so you know, there is no method to find or remove all occurrences of an item.
 However, we'll see an elegant way to do this in section 2.
@@ -339,6 +359,7 @@ Want to sort a list?  Use the `sort()` method. Try it out:
 ['AA', 'AAPL', 'AIG', 'GOOG', 'HPQ', 'RHT', 'YHOO']
 >>>
 ```
+VERIFIED
 
 Want to sort in reverse? Try this:
 
@@ -348,6 +369,7 @@ Want to sort in reverse? Try this:
 ['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA']
 >>>
 ```
+VERIFIED
 
 Note: Sorting a list modifies its contents 'in-place'.  That is, the elements of the list are shuffled around, but no new list is created as a result.
 
@@ -368,6 +390,7 @@ Use the `join()` method of strings like this (note: this looks funny at first).
 'YHOORHTHPQGOOGAIGAAPLAA'
 >>>
 ```
+VERIFIED
 
 ### Exercise 1.25: Lists of anything
 
