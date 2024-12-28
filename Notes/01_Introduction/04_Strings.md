@@ -278,15 +278,15 @@ Strings are arrays of characters. Try extracting a few characters:
 
 ```python
 >>> symbols[0]
-?
+? A
 >>> symbols[1]
-?
+? A
 >>> symbols[2]
-?
+? P
 >>> symbols[-1]        # Last character
-?
+? O
 >>> symbols[-2]        # Negative indices are from end of string
-?
+? C
 >>>
 ```
 
@@ -301,6 +301,7 @@ Traceback (most recent call last):
 TypeError: 'str' object does not support item assignment
 >>>
 ```
+VERIFIED
 
 ### Exercise 1.14: String concatenation
 
@@ -316,6 +317,7 @@ the end of `symbols`:
 'AAPL,IBM,MSFT,YHOO,SCOGOOG'
 >>>
 ```
+VERIFIED
 
 Oops!  That's not what you wanted. Fix it so that the `symbols` variable holds the value `'AAPL,IBM,MSFT,YHOO,SCO,GOOG'`.
 
@@ -325,6 +327,7 @@ Oops!  That's not what you wanted. Fix it so that the `symbols` variable holds t
 'AAPL,IBM,MSFT,YHOO,SCO,GOOG'
 >>>
 ```
+VERIFIED
 
 Add `'HPQ'` to the front the string:
 
@@ -334,6 +337,7 @@ Add `'HPQ'` to the front the string:
 'HPQ,AAPL,IBM,MSFT,YHOO,SCO,GOOG'
 >>>
 ```
+VERIFIED
 
 In these examples, it might look like the original string is being
 modified, in an apparent violation of strings being read only.  Not
@@ -349,15 +353,15 @@ interactive prompt, try these operations:
 
 ```python
 >>> 'IBM' in symbols
-?
+? true
 >>> 'AA' in symbols
 True
 >>> 'CAT' in symbols
-?
+? false
 >>>
 ```
 
-*Why did the check for `'AA'` return `True`?*
+*Why did the check for `'AA'` return `True`?* because  of AAPL element
 
 ### Exercise 1.16: String Methods
 
@@ -365,9 +369,9 @@ At the Python interactive prompt, try experimenting with some of the string meth
 
 ```python
 >>> symbols.lower()
-?
+? 'hpq,aapl,ibm,msft,yhoo,sco,goog'
 >>> symbols
-?
+? 'HPQ,AAPL,IBM,MSFT,YHOO,SCO,GOOG'
 >>>
 ```
 
@@ -382,16 +386,16 @@ Try some more operations:
 
 ```python
 >>> symbols.find('MSFT')
-?
+? 13
 >>> symbols[13:17]
-?
+? MSFT
 >>> symbols = symbols.replace('SCO','DOA')
 >>> symbols
-?
+? 'HPQ,AAPL,IBM,MSFT,YHOO,DOA,GOOG'
 >>> name = '   IBM   \n'
 >>> name = name.strip()    # Remove surrounding whitespace
 >>> name
-?
+? 'IBM'
 >>>
 ```
 
@@ -410,6 +414,7 @@ To do that, use an f-string. For example:
 '100 shares of IBM at $91.10'
 >>>
 ```
+VERIFIED
 
 Modify the `mortgage.py` program from [Exercise 1.10](03_Numbers.md) to create its output using f-strings.
 Try to make it so that output is nicely aligned.
